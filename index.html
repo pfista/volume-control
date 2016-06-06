@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <title>Volume</title>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body>
-  <div>The output volume is <span id='outputvolume'></span></div>
-  <div>The input volume is <span id='inputvolume'></span></div>
-  <div>The alert volume is <span id='alertvolume'></span></div>
-  <div>Muted: <span id='muted'></span></div>
+<body style="overflow-y:hidden; overflow-x:hidden;">
+  <div class="container">
+    <div class="row p-t-2">
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="card card-inverse card-primary text-xs-center">
+          <div class="card-block">
+            <blockquote class="card-blockquote">
+              <progress class="progress progress-warning" value="50" max="100"></progress>
+              <h1 id="outputvolume">50</h1>
+              <footer>volume</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-xs-center">
+          <form action="">
+            <input type="range" id='volumeSlider'>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h1 class="display-1"></h1>
 
-  <form action="">
-    <input type="range" id='volumeSlider'>
-  </form>
-  <script src="index.js"></script>
+  </div>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
