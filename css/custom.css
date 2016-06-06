@@ -28,3 +28,22 @@ input[type=range]:focus {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
 }
+
+body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  height: 100%;
+}
+
+html {
+  background: #222;
+}
+
+.slider {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
