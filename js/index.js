@@ -1,4 +1,4 @@
-const HOST = 'http://mik.local:8082'
+const HOST = 'http://dukakis.local:8082'
 
 const xhttp = new XMLHttpRequest();
 xhttp.addEventListener("readystatechange", processRequest, false);

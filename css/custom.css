@@ -14,11 +14,11 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
-    height: 24px;
-    width: 24px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background: goldenrod;
-    margin-top: -9px;
+    margin-top: -48px;
 }
 
 input[type=range]:focus {
@@ -44,6 +44,6 @@ html {
 
 .slider {
   position: absolute;
-  bottom: 30px;
+  bottom: 70px;
   width: 100%;
 }
